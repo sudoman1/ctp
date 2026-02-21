@@ -1,0 +1,717 @@
+html {
+  font-size: 16px;
+}
+
+body,
+p,
+td,
+div,
+span,
+input,
+th,
+li,
+textarea {
+  font-family: Roboto, sans-serif, arial, helvetica, sans-serif;
+  /* font-size: 16px; */
+  /* color: #000; */
+}
+
+body {
+  background: #fff;
+  margin: 0px;
+  padding: 0px;
+  border: 0;
+  /* text-align: center; */
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  margin: 5px 0 8px 0;
+}
+
+img {
+  border: 0px;
+}
+
+h1 {
+  color: #2e2e2e;
+  font-size: 24px;
+  font-weight: normal;
+  /* padding: 0 28px; */
+  margin: 12px 0;
+  line-height: 28px;
+}
+
+h2 {
+  font-size: 22px;
+  color: #2e2e2e;
+  padding: 0;
+  margin-bottom: 2px;
+  font-weight: normal;
+}
+
+h3 {
+  font-size: 19px;
+  font-weight: bold;
+}
+
+hr {
+  border: 0;
+  color: #aaa;
+  background-color: #aaa;
+  height: 1px;
+}
+
+a {
+  color: #069;
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+select {
+  border: 1px solid #044284;
+  border-radius: 2px;
+  box-shadow: 1px 1px 2px #666;
+  font-size: 16px;
+  padding: 4px;
+  color: #000;
+  box-sizing: border-box;
+}
+
+option {
+  font-size: 16px;
+}
+
+input {
+  padding: 5px 8px;
+  color: #000;
+  box-sizing: border-box;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+select:focus {
+  border: 1px solid #993300;
+  box-shadow: 1px 1px 2px #ba673d;
+  font-size: 16px;
+}
+
+[type="button"],
+[type="reset"],
+[type="submit"],
+button {
+  -webkit-appearance: button;
+}
+
+button,
+select {
+  text-transform: none;
+}
+.nodisplay {
+  display: none;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-left {
+  display: flex;
+  align-items: center;
+}
+.mid-text {
+  text-align: center;
+}
+.one-line {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  word-break: break-all;
+}
+.min-w50 {
+  min-width: 50px;
+}
+.min-w80 {
+  min-width: 82px;
+}
+.mbt80 {
+  margin-bottom: 80px;
+}
+.btn-check:active + .btn-primary:focus,
+.btn-check:checked + .btn-primary:focus,
+.btn-primary.active:focus,
+.btn-primary:active:focus,
+.show > .btn-primary.dropdown-toggle:focus {
+  box-shadow: none;
+}
+.dropdown-item:focus,
+.dropdown-item:hover {
+  color: #e5322d;
+  background-color: #e9ecef;
+}
+/************************/
+.pdfconv-content > h1 {
+  margin: 16px 0;
+  font-size: 32px;
+  text-align: center;
+}
+.pdfconv-content {
+  padding: 0;
+  max-width: 1000px;
+  margin: 60px auto 0;
+}
+.pdfconv-content > h2 {
+  font-size: 20px;
+  text-align: center;
+  color: #383e45;
+  font-weight: normal;
+}
+.pdfconv-article-content {
+  padding: 12px 0px 20px;
+  color: #666;
+  margin: 60px auto 60px;
+  max-width: 1000px;
+  background: #fff;
+  border-radius: 6px;
+}
+
+.pdfconv-article-over {
+  max-height: 266px;
+  overflow: hidden;
+}
+
+.pdfconv-article-content > h2 {
+  color: #383e45;
+  padding: 0 30px;
+  margin-top: 24px;
+}
+.pdfconv-article-content > p {
+  color: #383e45;
+  padding: 0 30px;
+  margin-top: 12px;
+}
+
+.pdfconv-article-title,
+.pdfconv-article-text {
+  max-width: 1000px;
+  margin: 10px auto;
+  text-align: left;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 0 28px;
+}
+
+.pdfconv-article-head {
+  padding: 0 28px;
+}
+
+.pdfconv-article-title {
+  margin: 8px auto 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.pdfconv-article-text {
+  margin: 6px auto 10px;
+  color: #333333;
+}
+.pdfconv-article-text > ul {
+  /* padding-left: 20px; */
+  margin-top: 6px;
+  margin-bottom: 4px;
+}
+.pdfconv-article-text > ul > li {
+  position: relative;
+  padding-left: 12px;
+}
+
+.pdfconv-article-text > ul > li:before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  background-color: #0d6efd;
+  left: 0;
+  top: 9px;
+}
+
+.pdfconv-article-content a {
+  color: #00979d;
+  text-decoration: none;
+}
+
+.pdfconv-article-content a:hover {
+  text-decoration: underline;
+}
+
+.pdfconv-article-content.pdfconv-top {
+  min-height: 500px;
+  padding: 16px 20px;
+}
+
+/***********新的样式***********/
+.pdfconv-container {
+  min-width: 790px;
+  overflow: hidden;
+  margin: 0 auto;
+  background-color: #f3f0ec;
+}
+.pdfconv-header {
+  box-shadow: 0 3px 6px 0 rgba(50, 50, 50, 0.3);
+  background: #ffffff;
+  /* position: fixed;
+  width: 100%;
+  height: 60px;
+  top: 0;
+  z-index: 9; */
+}
+.pdfconv-upbtn {
+  background-color: #e5322d;
+  color: #fff;
+  height: 68px;
+  width: 400px;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.pdfconv-upbtn > span {
+  font-weight: 600;
+}
+.pdfconv-upbtn > img {
+  width: 36px;
+  margin-left: 16px;
+}
+.pdfconv-upbtn:hover {
+  background-color: #161616;
+}
+
+.pdfconv-header-content {
+  max-width: 1000px;
+  height: 60px;
+  /* background: #f1f1f1; */
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.pdfconv-header-left {
+  display: flex;
+  align-items: center;
+}
+.pdfconv-header-menu {
+  max-height: 500px;
+  overflow-y: auto;
+  border-radius: 0;
+}
+.pdfconv-header-btn {
+  background: #ffffff !important;
+  border: none;
+  border-radius: 0;
+  color: #000000 !important;
+}
+.pdfconv-header-btn:hover {
+  /* opacity: 0.85; */
+  background: #f1f1f1;
+  color: #e5322d !important;
+}
+.pdfconv-header-btn:focus,
+.pdfconv-header-btn:active {
+  border: none;
+  box-shadow: none;
+}
+.pdfconv-header-logo {
+  /* margin-left: 20px; */
+  margin-right: 6px;
+}
+
+.pdfconv-header-logo > img {
+  width: 42px;
+  height: 42px;
+}
+
+.pdfconv-footer {
+  list-style: none;
+  overflow: hidden;
+  background: hsla(0, 0%, 100%, 0.6);
+}
+
+.pdfconv-footer-links {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0;
+  margin-top: 12px;
+  flex-wrap: wrap;
+  max-width: 92%;
+}
+
+.pdfconv-footer-links__item {
+  list-style: none;
+  margin-right: 16px;
+  line-height: 30px;
+}
+
+.pdfconv-footer-links__item > a {
+  color: #333333;
+  text-decoration: none;
+}
+
+.pdfconv-footer-links__item > a:hover {
+  text-decoration: underline;
+}
+
+.pdfconv-footer-copy {
+  color: #333333;
+  margin: 0;
+  line-height: 46px;
+  text-align: center;
+}
+
+.pdfconv-footer-copy > a {
+  color: #333333;
+  text-decoration: none;
+}
+
+.pdfconv-footer-copy > a:hover {
+  text-decoration: underline;
+}
+
+.pdfconv-langs-container {
+  max-width: 1000px;
+  margin: 30px auto 20px;
+}
+
+.pdfconv-langs-title {
+  margin: 0;
+}
+
+.pdfconv-langs-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+.pdfconv-langs-item {
+  margin-right: 20px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  width: 200px;
+  padding: 5px 3px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.pdfconv-langs-item:hover {
+  background: #04ac80;
+}
+.pdfconv-langs-item:hover > a {
+  color: #fff;
+}
+.pdfconv-langs-icon {
+  margin-right: 10px;
+  padding: 3px;
+  background: #04ac80;
+  border-radius: 3px;
+}
+.pdfconv-langs-icon > img {
+  width: 24px;
+}
+
+.pdfconv-langs-item > a {
+  color: #383e45;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.pdfconv-notfound-title {
+  text-align: center !important;
+  font-size: 24px !important;
+  color: #00979d;
+  line-height: 40px !important;
+}
+
+.pdfconv-notfound-desc {
+  text-align: center !important;
+}
+
+.sharethis-inline-share-buttons {
+  margin-right: 20px;
+}
+.pdfconv-block-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.pdfconv-block-item {
+  width: calc(90% / 3);
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pdfconv-block-item > h2 {
+  font-size: 18px;
+  text-align: center;
+  margin-top: 20px;
+}
+.pdfconv-block-item > p {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 20px;
+}
+.pdfconv-block-item > img {
+}
+/************* pdf ************/
+.pdfconv-bottom {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  background: #fff;
+  box-shadow: 0 -3px 6px 0 rgba(50, 50, 50, 0.15);
+  justify-content: center;
+}
+.pdfconv-actions {
+  width: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.pdfconv-upload,
+.pdfconv-down {
+  position: relative;
+  background-color: #e5322d;
+  color: #fff;
+  height: 50px;
+  width: 160px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.pdfconv-upload:hover,
+.pdfconv-down:hover {
+  background-color: #161616;
+}
+.pdfconv-down {
+  margin-left: 20px;
+}
+.pdfconv-upload > input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  z-index: 1;
+  cursor: pointer;
+  padding: 0;
+}
+.pdfconv-imgitem {
+  position: relative;
+  width: 210px;
+  height: 297px;
+  display: flex;
+  align-items: center;
+  background: #fff;
+  padding: 10px;
+  margin-left: 16px;
+  margin-bottom: 16px;
+  transition: all 0.3s;
+  border-radius: 3px;
+}
+.pdfconv-imgitem:hover {
+  box-shadow: 0px 0px 3px 4px rgba(96, 96, 96, 0.05);
+  transform: translateY(-6px);
+}
+.pdfconv-imgitem:nth-child(4n + 1) {
+  margin-left: 0;
+}
+.pdfconv-imgitem > img {
+  width: 100%;
+}
+.pdfconv-imgdelete {
+  background: url(../images/icon-close.svg) center/contain no-repeat;
+  position: absolute;
+  height: 32px;
+  width: 32px;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  display: none;
+  transition: all 0.3s;
+}
+.pdfconv-imgdelete:hover {
+  opacity: 0.85;
+}
+.pdfconv-imgitem:hover .pdfconv-imgdelete {
+  display: block;
+}
+.pdfconv-bort {
+  display: flex;
+}
+.pdfconv-imgs {
+  margin-top: 50px;
+  border: 1px dashed #e5322d;
+  border-radius: 5px;
+  padding: 50px 20px;
+}
+.pdfconv-img-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 1040px) {
+  .pdfconv-langs-container {
+    padding: 0 40px;
+  }
+  .pdfconv-content {
+    padding: 0 16px;
+  }
+  .pdfconv-article-content {
+    padding: 6px 0px;
+    margin-top: 32px;
+  }
+}
+
+@media (max-width: 576px) {
+  .pdfconv-upload:hover,
+  .pdfconv-down:hover,
+  .pdfconv-upbtn:hover {
+    background-color: #e5322d;
+  }
+  .pdfconv-imgitem {
+    margin-left: 0px;
+  }
+  .pdfconv-imgdelete {
+    display: block;
+  }
+  .pdfconv-actions {
+    width: 100%;
+    justify-content: center;
+  }
+  .pdfconv-img-list {
+    justify-content: center;
+  }
+  .pdfconv-langs-list {
+    margin-top: 8px;
+  }
+  .pdfconv-article-content > h2 {
+    font-size: 18px;
+    padding: 0 16px;
+    margin-top: 18px;
+  }
+  .pdfconv-article-content > p {
+    font-size: 15px;
+    padding: 0 16px;
+    margin-top: 6px;
+  }
+  .pdfconv-block-item {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .pdfconv-block-item > h2,
+  .pdfconv-block-item > p {
+    margin-top: 10px;
+  }
+  .pdfconv-imgs {
+    margin-top: 30px;
+  }
+  .pdfconv-content {
+    margin: 20px auto 0;
+  }
+  .pdfconv-upbtn {
+    width: 100%;
+    font-size: 18px;
+  }
+  .pdfconv-upbtn > img {
+    width: 30px;
+    margin-left: 12px;
+  }
+  .pdfconv-article-content {
+    margin: 24px auto 24px;
+  }
+  .pdfconv-article-content.pdfconv-top {
+    margin: 24px 16px;
+  }
+
+  .pdfconv-header-logo {
+    margin-left: 12px;
+  }
+
+  .sharethis-inline-share-buttons {
+    margin-right: 12px;
+  }
+
+  .pdfconv-langs-container {
+    padding: 0;
+  }
+
+  .pdfconv-article-title,
+  .pdfconv-article-text {
+    padding: 0 16px;
+  }
+  .pdfconv-article-head {
+    padding: 0 16px;
+  }
+  .pdfconv-content > h1 {
+    margin: 8px 0;
+    font-size: 24px;
+  }
+  .pdfconv-content > h2 {
+    font-size: 16px;
+  }
+  .pdfconv-container {
+    min-width: auto;
+  }
+  .pdfconv-my {
+    margin-top: 18px;
+  }
+}
+
+/*
+     FILE ARCHIVED ON 19:32:17 Jul 16, 2025 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 04:56:22 Feb 21, 2026.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.624
+  exclusion.robots: 0.052
+  exclusion.robots.policy: 0.041
+  esindex: 0.012
+  cdx.remote: 7.226
+  LoadShardBlock: 77.192 (3)
+  PetaboxLoader3.datanode: 146.261 (5)
+  load_resource: 85.456
+  loaddict: 59.012
+*/
